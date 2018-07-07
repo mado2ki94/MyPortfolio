@@ -26,4 +26,4 @@ production:
   pool: 5
   database: ysk-portfolio_production
   username: ysk-portfolio
-  password: <%= ENV[YSK-PORTFOLIO_DATABASE_PASSWORD'] %>
+  password: <%= ENV['YSK-PORTFOLIO_DATABASE_PASSWORD'] %>
