@@ -1,0 +1,364 @@
+@charset "UTF-8"
+
+html {
+  /* font-size: 62.5%; */
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #151515 url("images/portfolio_background.jpg") no-repeat fixed left bottom;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  font-family: 'Kreon', "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+.header {
+  padding: 170px 30px 80px;
+}
+
+.site-title-sub {
+  margin: 0 0 30px;
+  letter-spacing: 2px;
+  font-size: 2.2rem;
+}
+
+.site-title-sub::before, .site-title-sub::after {
+  content: '';
+  display: inline-block;
+  width: 140px;
+  height: 2px;
+  margin: 0 30px;
+  background-color: #fff;
+  vertical-align: middle;
+}
+
+.site-title {
+  margin: 50px 0 40px;
+  font-size: 7.6rem;
+}
+
+.site-description {
+  margin-bottom: 50px;
+  color: #888;
+  font-size: 1.6rem;
+}
+
+.button {
+  display: inline-block;
+  width: 200px;
+  padding: 20px;
+  border-radius: 4px;
+  border: 10px double #ffffff;
+  background-color: rgba(256, 0, 0, 0.5);
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+.button-showy {
+  background-color: rgba(0, 0, 256, 0.5);
+}
+
+.buttons .button {
+  margin: 10px;
+}
+
+.about {
+  padding: 80px 30px;
+  background-color: #fff;
+  color: #333;
+}
+
+.heading{
+  position: relative;
+  display: inline-block;
+  margin: 30px 0 15px;
+  padding-bottom: 15px;
+  letter-spacing: 2px;
+  font-size: 4rem;
+}
+
+.heading::before, .heading::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid #999;
+}
+
+
+.heading::before {
+  bottom: 5px;
+}
+
+.about-text {
+  margin: 30px 0;
+  line-height: 2.5;
+}
+
+.skills {
+  background-color: #383634;
+  padding: 80px 0;
+}
+
+.skills-wrapper {
+  display: table;
+  width: 100%;
+  height: 500px;
+  margin-top: 60px;
+  table-layout: fixed;
+}
+
+.skill-box {
+  display: table-cell;
+  position: relative;
+  height: 100%;
+}
+
+.skill-box::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+}
+
+.red-box {
+  background-color: rgba(256, 0, 0, 0.3);
+}
+
+.blue-box {
+  background-color: rgba(0, 0, 256, 0.3);
+}
+
+.skill-text {
+  font-size: 2rem;
+  text-align: center;
+  line-height: 250px;
+  margin-left: auto;
+  height: 50%;
+}
+
+.works {
+  padding: 80px 0;
+  background-color: #fff;
+  color: #333;
+}
+
+.works-wrapper {
+  display: table;
+  width: 80%;
+  margin: 50px auto 0;
+  table-layout: fixed;
+}
+
+.work-box {
+  display: table-cell;
+}
+
+.work-image {
+  display: block;
+  border-style: none;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+}
+
+.application-title {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+}
+
+.work-text {
+  margin: 10px;
+  font-size: 1.2rem;
+}
+
+.button-grey {
+  margin-top: 30px;
+  border-style: none;
+  background-color: #424242;
+}
+
+.contact {
+  padding: 80px 0 150px;
+}
+
+.contact-form {
+  width: 50%;
+  margin: 50px auto 0;
+}
+
+.contact-name, .contact-email, .contact-massage {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  outline: none;
+}
+
+.contact-form input[type=text], .contact-form input[type=email], .contact-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  outline: none;
+}
+
+.contact-name:focus, .contact-email:focus, .contact-massage:focus {
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5) inset;
+}
+
+.contact-form input[type=text]:focus, .contact-form input[type=email]:focus, .contact-form textarea:focus {
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5) inset;
+}
+
+.contact-massage {
+  height: 150px;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.contact-submit {
+  display: block;
+  width: 200px;
+  margin: 40px auto 0;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+.contact-form input[type=submit] {
+  display: block;
+  width: 200px;
+  margin: 40px auto 0;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+.contact-submit:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.contact-form input[type=submit]:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.footer {
+  padding: 30px 0;
+  font-size: 1.3rem;
+  letter-spacing: 3px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 1024px) {
+  body {
+    background-image: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-title-sub::before, .site-title-sub::after {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  .site-title-sub {
+    font-size: 1.7rem;
+  }
+
+  .site-title {
+    margin-top: 35px;
+    font-size: 2.7rem;
+  }
+
+  .header {
+    padding-top: 60px;
+  }
+
+  .button:hover {
+    opacity: 1;
+  }
+
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  body {
+    font-size: 0.9rem;
+  }
+
+  .skills-wrapper, .skill-box {
+    display: block;
+  }
+
+  .skills-wrapper {
+    height: 800px;
+  }
+
+  .skill-box {
+    height: 200px;
+  }
+
+  .skill-text {
+    line-height: 100px;
+  }
+
+  .reverse-red-box {
+    background-color: rgba(256, 0, 0, 0.3);
+  }
+
+  .reverse-blue-box {
+    background-color: rgba(0, 0, 256, 0.3);
+  }
+
+  .works-wrapper, .work-box {
+    display: block;
+  }
+
+  .work-box {
+    margin: 40px auto;
+  }
+
+  .work-text {
+    margin: 30px;;
+  }
+
+  .contact-form {
+    width: 80%;
+  }
+
+  .contact {
+    padding-bottom: 80px;
+  }
+}

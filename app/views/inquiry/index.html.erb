@@ -1,0 +1,97 @@
+<header class="header">
+  <p class="site-title-sub">NO PAIN NO GAIN</p>
+  <h1 class="site-title">YOSUKE SUITA</h1>
+  <p class="site-description">College sutudent & Web engineer</p>
+  <div class="buttons">
+    <a class="button" href="#about">MY PORTFOLIO</a>
+    <a class="button button-showy" href="#contact">CONTACT</a>
+  </div>
+</header>
+<section class="about" id="about">
+  <h2 class="heading">ABOUT ME</h2>
+  <p class="about-text">神戸大学工学部電気電子工学科３年生。<br>京都市伏見区出身。現在は神戸市在住。</p>
+  <p class="about-text">2018年4月よりプログラミングの勉強を開始。<br>Webエンジニアとしてスキルアップのため、2018年8月より上京予定。</p>
+</section>
+<section class="skills">
+  <h2 class="heading">SKILLS</h2>
+  <div class="skills-wrapper">
+    <div class="skill-box">
+      <p class="skill-text red-box">Ruby</p>
+      <p class="skill-text blue-box">Ruby on Rails</p>
+    </div>
+    <div class="skill-box">
+      <p class="skill-text blue-box reverse-red-box">JavaScript</p>
+      <p class="skill-text red-box reverse-blue-box">Vue.js</p>
+    </div>
+    <div class="skill-box">
+      <p class="skill-text red-box">PHP</p>
+      <p class="skill-text blue-box">SQL</p>
+    </div>
+    <div class="skill-box">
+      <p class="skill-text blue-box reverse-red-box">Git</p>
+      <p class="skill-text red-box reverse-blue-box">AWS</p>
+    </div>
+  </div>
+</section>
+<section class="works">
+   <h2 class="heading">WORKS</h2>
+   <div class="works-wrapper">
+     <div class="work-box">
+       <%= image_tag "Portfolio_Ruby_on_Rails_Tutorial.png", class: "work-image", alt: "制作物1" %>
+       <!-- <img class="work-image" src="Portfolio_Ruby_on_Rails_Tutorial.png" alt="制作物1"> -->
+       <div class="application-title">Ruby on Rails Tutorial</div>
+       <p class="work-text">Railsチュートリアル。</p>
+       <p class="work-text">制作期間：3週間</p>
+       <a class="button button-grey" href="https://young-lowlands-69989.herokuapp.com/" target="_blank">GO TO APP</a>
+
+     </div>
+     <div class="work-box">
+       <%= image_tag "Portfolio_Foodol.png", class: "work-image", alt: "制作物2" %>
+       <!-- <img class="work-image" src="Portfolio_Foodol.png" alt="制作物2"> -->
+       <div class="application-title">Foodol</div>
+       <p class="work-text">マクロ食事管理SNS</p>
+       <p class="work-text">制作期間：2週間</p>
+       <a class="button button-grey" href="https://Foodol.herokuapp.com/" target="_blank">GO TO APP</a>
+     </div>
+     <div class="work-box">
+       <%= image_tag "Portfolio_kiniita.png", class: "work-image", alt: "制作物3" %>
+       <!-- <img class="work-image" src="Portfolio_kiniita.png" alt="制作物3"> -->
+       <div class="application-title">kiniita</div>
+       <p class="work-text">フィットネス質問サイト</p>
+       <p class="work-text">制作期間：2週間</p>
+       <a class="button button-grey" href="https://kiniita.herokuapp.com/" target="_blank">GO TO APP</a>
+     </div>
+   </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2 class="heading">CONTACT</h2>
+  <div class="contact-form">
+    <%= form_for @inquiry, :url => inquiry_confirm_path do |f| %>
+    <!-- <form class="contact-form" action="/inquiry/confirm" method="post"> -->
+      <% if @inquiry.errors.any? %>
+        <div class="alert alert-danger" role="alert">
+          <strong>入力内容にエラーがあります</strong>
+          <ul>
+            <% @inquiry.errors.each do |attr, msg| %>
+              <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+      <%= f.text_field :name, class: "contact-name", placeholder: "NAME" %>
+      <!-- <input type="text" name="name" placeholder="NAME"> -->
+      <%= f.text_field :email, class: "contact-email", placeholder: "EMAIL" %>
+      <!-- <input type="email" name="email" placeholder="EMAIL"> -->
+      <%= f.text_area :message, class: "contact-massage", placeholder: "MESSAGE" %>
+      <!-- <textarea name="message" placeholder="MESSAGE"></textarea> -->
+      <%= f.submit "SEND", class: "contact-submit" %>
+      <!-- <input type="submit" value="SEND"> -->
+    <!-- </form> -->
+    <% end %>
+  </div>
+</section>
+<footer class="footer">
+  MADE BY YSK
+</footer>
+<script type="lib/placeholder.min.js"></script>
