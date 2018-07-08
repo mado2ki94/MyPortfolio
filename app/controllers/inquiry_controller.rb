@@ -19,6 +19,7 @@ class InquiryController < ApplicationController
     InquiryMailer.received_email(@inquiry).deliver
     render action: "thanks"
   end
+  
 
   def inquiry_params
     params.require(:inquiry).permit(

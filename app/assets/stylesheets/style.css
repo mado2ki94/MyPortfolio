@@ -213,7 +213,7 @@ body {
   outline: none;
 }
 
-.contact-form input[type=text], .contact-form input[type=email], .contact-form textarea {
+/* .contact-form input[type=text], .contact-form input[type=email], .contact-form textarea {
   display: block;
   width: 100%;
   margin-bottom: 10px;
@@ -223,23 +223,23 @@ body {
   background-color: rgba(255, 255, 255, 0.05);
   color: #fff;
   outline: none;
-}
+} */
 
 .contact-name:focus, .contact-email:focus, .contact-massage:focus {
   box-shadow: 0 0 8px rgba(255, 255, 255, 0.5) inset;
 }
 
-.contact-form input[type=text]:focus, .contact-form input[type=email]:focus, .contact-form textarea:focus {
+/* .contact-form input[type=text]:focus, .contact-form input[type=email]:focus, .contact-form textarea:focus {
   box-shadow: 0 0 8px rgba(255, 255, 255, 0.5) inset;
-}
+} */
 
 .contact-massage {
   height: 150px;
 }
 
-.contact-form textarea {
+/* .contact-form textarea {
   height: 150px;
-}
+} */
 
 .contact-submit {
   display: block;
@@ -253,7 +253,7 @@ body {
   cursor: pointer;
 }
 
-.contact-form input[type=submit] {
+/* .contact-form input[type=submit] {
   display: block;
   width: 200px;
   margin: 40px auto 0;
@@ -263,15 +263,15 @@ body {
   background-color: transparent;
   color: rgba(255, 255, 255, 0.6);
   cursor: pointer;
-}
+} */
 
 .contact-submit:hover {
   background-color: rgba(255, 255, 255, 0.05);
 }
 
-.contact-form input[type=submit]:hover {
+/* .contact-form input[type=submit]:hover {
   background-color: rgba(255, 255, 255, 0.05);
-}
+} */
 
 .footer {
   padding: 30px 0;
@@ -361,4 +361,57 @@ body {
   .contact {
     padding-bottom: 80px;
   }
+}
+
+.page-header {
+
+}
+
+.confirm-info {
+  /* width: 80%; */
+}
+
+.confirm-name, .confirm-email {
+  font-size: 1.3rem;
+  margin: 20px 0;
+}
+
+.confirm-message {
+  font-size: 1.5rem;
+  margin-top: 50px;
+}
+
+.message-info {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.confirm-email-info, .confirm-name-info, .confirm-message-info {
+  margin-top: 20px;
+}
+
+.contact-name, .contact-email, .contact-massage {
+  color: #ccc;
+}
+
+.thanks-wrapper a, .thanks-wrapper a:active {
+  color: white;
+}
+
+.thanks-message {
+  margin: 80px 0;
+  font-size: 1.2rem;
+}
+
+.thanks-heading {
+  font-size: 3rem;
+}
+
+.alert ul {
+  list-style: none;
+}
+
+.alert li {
+  margin: 10px 0;
+  letter-spacing: 2px;
 }
