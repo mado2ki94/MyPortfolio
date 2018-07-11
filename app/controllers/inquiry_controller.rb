@@ -3,6 +3,10 @@ class InquiryController < ApplicationController
   def index
     @inquiry = Inquiry.new
     render action: "index"
+    # respond_to do |format|
+    #   format.html { redirect_to @inquiry }
+    #   format.js
+    # end
   end
 
   def confirm
@@ -19,7 +23,7 @@ class InquiryController < ApplicationController
     InquiryMailer.received_email(@inquiry).deliver
     render action: "thanks"
   end
-  
+
 
   def inquiry_params
     params.require(:inquiry).permit(
