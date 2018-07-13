@@ -156,24 +156,42 @@ body {
   color: #333;
 }
 
-.works-wrapper {
-  display: table;
-  width: 80%;
-  margin: 50px auto 0;
-  table-layout: fixed;
+.hobby-heading {
+  margin-top: 80px;
 }
 
-.work-box {
+.works-wrapper, .hobbies-wrapper {
+  display: table;
+  table-layout: fixed;
+  margin: 50px auto 0;
+}
+
+.works-wrapper {
+  width: 80%;
+}
+
+.hobbies-wrapper {
+  width: 100%;
+}
+
+.work-box, .hobby-box {
   display: table-cell;
 }
 
-.work-image {
+.work-image, .hobby-image {
   display: block;
   border-style: none;
-  padding: 20px;
   width: 100%;
-  box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
   overflow: hidden;
+}
+
+.work-image {
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+  padding: 20px;
+}
+
+.hobby-image {
+  padding: 5px;
 }
 
 .work-image img {
@@ -201,6 +219,48 @@ body {
   margin-top: 30px;
   border-style: none;
   background-color: #424242;
+}
+
+.hobby-title {
+  font-size: 1.5rem;
+}
+
+.hobby-content p {
+  font-size: 1.3rem;
+  margin: 20px 0;
+}
+
+.youtube-icon {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  padding-top: 20px;
+}
+
+.watch-youtube {
+  display: inline-block;
+  line-height: 30px;
+  margin: 0px;
+  height: 40px;
+}
+
+.hobby-content a {
+  font-size: 1rem;
+  display: inline-block;
+  line-height: 30px;
+  margin: 0px;
+  height: 40px;
+}
+
+.watch-youtube p {
+  display: inline-block;
+  margin: 0px;
+  padding-left: 5px;
+}
+
+.watch-youtube a {
+  color: black;
+  text-decoration: none;
 }
 
 .contact {
@@ -408,16 +468,20 @@ body {
     background-color: rgba(0, 0, 256, 0.3);
   }
 
-  .works-wrapper, .work-box {
+  .works-wrapper, .work-box, .hobbies-wrapper, .hobby-box {
     display: block;
   }
 
-  .work-box {
+  .work-box, .hobby-box {
     margin: 40px auto;
   }
 
   .work-text {
     margin: 30px;;
+  }
+
+  .hobby-content p {
+    font-size: 1rem;
   }
 
   .contact-form {

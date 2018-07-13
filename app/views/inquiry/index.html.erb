@@ -11,27 +11,48 @@
   <h2 class="heading">ABOUT ME</h2>
   <p class="about-text">神戸大学工学部電気電子工学科３年生。<br>京都市伏見区出身。現在は神戸市在住。</p>
   <p class="about-text">2018年4月よりプログラミングの勉強を開始。<br>Webエンジニアとしてスキルアップのため、2018年8月より上京予定。</p>
+  <h2 class="heading hobby-heading">HOBBY</h2>
   <div class="hobbies-wrapper">
-    <h2 class="heading">HOBBY</h2>
     <div class="hobby-box">
-      <%= image_tag "Portfolio_hobby_doubledutch.jpeg" %>
+      <p class="hobby-title">− I'M JUMPER −</p>
+      <div class="hobby-image">
+        <%= image_tag "Portfolio_hobby_doubledutch.jpg", class: "hobby-image" %>
+      </div>
       <div class="hobby-content">
         <p>ストリートスポーツ「ダブルダッチ」に</p>
         <p>３年間注力。全国大会敗者復活枠。</p>
+        <div class="watch-youtube">
+          <%= link_to "https://www.youtube.com/watch?v=eZpmwGhEk4c", target: "_blank" do %>
+            <%= image_tag "youtube-icon.png", class:"youtube-icon" %>
+            <p>WATCH YOUTUBE</p>
+          <% end %>
+        </div>
       </div>
     </div>
     <div class="hobby-box">
-      <%= image_tag "Portfolio_hobby_workout.jpg" %>
+      <p class="hobby-title">− I'M TRAINER −</p>
+      <div class="hobby-image">
+        <%= image_tag "Portfolio_hobby_workout.jpg", class: "hobby-image" %>
+      </div>
       <div class="hobby-content">
         <p>ボディメイクにハマり、</p>
         <p>日々ジムに通っています。</p>
       </div>
     </div>
     <div class="hobby-box">
-      <%= image_tag "Portfolio_hobby_dtm.jpg" %>
+      <p class="hobby-title">− I'M DJ −</p>
+      <div class="hobby-image">
+        <%= image_tag "Portfolio_hobby_dtm.jpg", class: "hobby-image" %>
+      </div>
       <div class="hobby-content">
         <p>「DTM(DeskTopMusic)」</p>
         <p>パソコン一台で作曲してます。</p>
+        <div class="watch-youtube">
+          <%= link_to "https://www.youtube.com/watch?v=NLC3Xv_N9Z4", target: "_blank" do %>
+            <%= image_tag "youtube-icon.png", class:"youtube-icon" %>
+            <p>WATCH YOUTUBE</p>
+          <% end %>
+        </div>
       </div>
     </div>
   </div>
@@ -64,7 +85,6 @@
        <div class="work-image">
          <%= image_tag "Portfolio_Ruby_on_Rails_Tutorial.png", class: "work-image", alt: "制作物1" %>
        </div>
-       <!-- <img class="work-image" src="Portfolio_Ruby_on_Rails_Tutorial.png" alt="制作物1"> -->
        <div class="application-title">Ruby on Rails Tutorial</div>
        <p class="work-text">Railsチュートリアル。</p>
        <p class="work-text">制作期間：3週間</p>
