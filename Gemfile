@@ -5,6 +5,7 @@ ruby '2.5.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.0'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'dotenv-rails'
 gem 'puma', '~> 3.11'
 gem 'sass-rails', '~> 5.0'

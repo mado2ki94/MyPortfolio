@@ -10,7 +10,19 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+
+$(function() {
+  $("#fiita-show-modal").click(function(){
+    $("#fiita-modal-wrapper").fadeIn();
+  })
+
+  $("#close-modal").click(function(){
+    $("#fiita-modal-wrapper").fadeOut();
+  })
+});

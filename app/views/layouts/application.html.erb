@@ -12,9 +12,11 @@
     <link rel="stylesheet" href="css/style.css">
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= favicon_link_tag %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   </head>
 
   <body>
     <%= yield %>
+    <script src="application.js"></script>
   </body>
 </html>

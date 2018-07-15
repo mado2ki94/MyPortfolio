@@ -415,6 +415,70 @@ body {
   letter-spacing: 2px;
 }
 
+.fiita-modal-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display: none;
+}
+
+.fiita-modal {
+  position: absolute;
+  top: 10%;
+  left: 34%;
+  background-color: #e6ecf0;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 450px;
+  height: auto;
+  text-align: center;
+}
+
+.fiita-show-modal {
+  cursor: pointer;
+}
+
+.close-modal {
+  cursor: pointer;
+}
+
+.work-image-in-modal {
+  width: 80%;
+  padding: 0px;
+  margin: auto;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+}
+
+.application-title-in-modal {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.application-detail h2 {
+  font-size: 18px;
+  margin: 20px 0 10px;
+}
+
+.application-detail-left {
+  float: left;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.application-detail-right {
+  float: right;
+  text-align: left;
+  margin-right: 20px;
+}
+
+.clear {
+  clear: both;
+}
+
 @media (max-width: 1024px) {
   body {
     background-image: none;
@@ -516,5 +580,16 @@ body {
 
   .thanks-message {
     font-size: 0.8rem;
+  }
+
+  .fiita-modal {
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    width: 340px;
+  }
+
+  .application-detail-left, .application-detail-right {
+    font-size: 12px;
   }
 }
