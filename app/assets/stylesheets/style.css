@@ -145,9 +145,18 @@ body {
 .skill-text {
   font-size: 2rem;
   text-align: center;
-  line-height: 250px;
+  /* line-height: 50px; */
   margin-left: auto;
   height: 50%;
+}
+
+.skill-text-title {
+  line-height: 100px;
+}
+
+.skill-text-detail {
+  font-size: 1rem;
+  margin-bottom: 30px;
 }
 
 .works {
@@ -449,15 +458,24 @@ body {
   }
 
   .skills-wrapper {
-    height: 800px;
+    height: 1080px;
   }
 
   .skill-box {
-    height: 200px;
+    height: 280px;
   }
 
   .skill-text {
     line-height: 100px;
+  }
+
+  .skill-text-title {
+    line-height: 50px;
+  }
+
+  .skill-text-detail {
+    line-height: 30px;
+    margin-bottom: 0px;
   }
 
   .reverse-red-box {
