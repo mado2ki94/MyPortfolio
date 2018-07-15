@@ -2,6 +2,16 @@
   <p class="site-title-sub">NO PAIN NO GAIN</p>
   <h1 class="site-title">YOSUKE SUITA</h1>
   <p class="site-description">College sutudent & Web engineer</p>
+  <div class="twitter-icon">
+    <%= link_to "https://twitter.com/ysk_200", target: "_blank" do %>
+      <i class="fab fa-twitter-square fa-3x"></i>
+    <% end %>
+  </div>
+  <div class="github-icon">
+    <%= link_to "https://github.com/mado2ki94", target: "_blank" do %>
+      <%= image_tag "github-icon.jpg" %>
+    <% end %>
+  </div>
   <div class="buttons">
     <a class="button" href="#about">MY PORTFOLIO</a>
     <a class="button button-showy" href="#contact">CONTACT</a>
@@ -186,6 +196,18 @@
 
 <section class="contact" id="contact">
   <h2 class="heading">CONTACT</h2>
+  <br>
+  <br>
+  <div class="twitter-icon">
+    <%= link_to "https://twitter.com/ysk_200", target: "_blank" do %>
+      <i class="fab fa-twitter-square fa-3x"></i>
+    <% end %>
+  </div>
+  <div class="github-icon">
+    <%= link_to "https://github.com/mado2ki94", target: "_blank" do %>
+      <%= image_tag "github-icon.jpg" %>
+    <% end %>
+  </div>
   <div class="contact-form">
     <%= form_for @inquiry, :url => inquiry_confirm_path do |f| %>
     <!-- <form class="contact-form" action="/inquiry/confirm" method="post"> -->

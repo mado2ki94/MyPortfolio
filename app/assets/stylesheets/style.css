@@ -479,6 +479,24 @@ body {
   clear: both;
 }
 
+.twitter-icon, .github-icon {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  vertical-align: top;
+  margin: 0 3px 10px;
+}
+
+.fa-twitter-square {
+  color: white;
+}
+
+.github-icon img {
+  width: 42px;
+  height: 42px;
+  border-radius: 5px;
+}
+
 @media (max-width: 1024px) {
   body {
     background-image: none;
