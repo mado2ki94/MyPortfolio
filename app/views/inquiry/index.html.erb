@@ -172,6 +172,7 @@
               <p>画像アップロード機能</p>
               <p>質問投稿・編集・削除機能</p>
               <p>質問締め切り機能</p>
+              <p>レスポンシブ対応</p>
             </div>
             <div class="application-detail-right">
               <p>回答投稿・削除機能</p>
@@ -210,7 +211,6 @@
   </div>
   <div class="contact-form">
     <%= form_for @inquiry, :url => inquiry_confirm_path do |f| %>
-    <!-- <form class="contact-form" action="/inquiry/confirm" method="post"> -->
       <% if @inquiry.errors.any? %>
         <div class="alert alert-danger" role="alert">
           <strong>※入力内容にエラーがあります※</strong>
@@ -222,14 +222,9 @@
         </div>
       <% end %>
       <%= f.text_field :name, class: "contact-name", placeholder: "NAME" %>
-      <!-- <input type="text" name="name" placeholder="NAME"> -->
       <%= f.text_field :email, class: "contact-email", placeholder: "EMAIL" %>
-      <!-- <input type="email" name="email" placeholder="EMAIL"> -->
       <%= f.text_area :message, class: "contact-massage", placeholder: "MESSAGE" %>
-      <!-- <textarea name="message" placeholder="MESSAGE"></textarea> -->
       <%= f.submit "SEND", class: "contact-submit" %>
-      <!-- <input type="submit" value="SEND"> -->
-    <!-- </form> -->
     <% end %>
   </div>
 </section>
